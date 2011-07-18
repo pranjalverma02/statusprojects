@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @itismgmt.name %>
+</p>
+
+<p>
+  <b>Existing nos:</b>
+  <%=h @itismgmt.existing_nos %>
+</p>
+
+<p>
+  <b>Nos deleted:</b>
+  <%=h @itismgmt.nos_deleted %>
+</p>
+
+<p>
+  <b>Nos added:</b>
+  <%=h @itismgmt.nos_added %>
+</p>
+
+<p>
+  <b>Total:</b>
+  <%=h @itismgmt.total %>
+</p>
+
+<p>
+  <b>Report date:</b>
+  <%=h @itismgmt.report_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_itismgmt_path(@itismgmt) %> |
+<%= link_to 'Back', itismgmts_path %>

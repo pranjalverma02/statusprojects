@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  work_firm: MyString
+  cost: MyString
+  period: MyString
+  status: MyText
+
+two:
+  name: MyString
+  work_firm: MyString
+  cost: MyString
+  period: MyString
+  status: MyText

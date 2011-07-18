@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  cost: MyString
+  award_date: MyString
+  schd_date_of_compl: MyString
+  progress: MyText
+  report_date: MyString
+
+two:
+  name: MyString
+  cost: MyString
+  award_date: MyString
+  schd_date_of_compl: MyString
+  progress: MyText
+  report_date: MyString

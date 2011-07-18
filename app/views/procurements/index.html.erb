@@ -1,0 +1,32 @@
+<h1>Budget Utilization/Procurement</h1>
+<p>Please Enter Name from "Capital/Capex, Stores & Spares, Revenue/opex/Contracts"</p>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Item description</th>
+    <th>Pr no</th>
+    <th>Amount</th>
+    <th>Status</th>
+    <th>Report date</th>
+  </tr>
+
+<% for procurement in @procurements %>
+  <tr>
+    <td><%=h procurement.name %></td>
+    <td><%=h procurement.item_description %></td>
+    <td><%=h procurement.pr_no %></td>
+    <td><%=h procurement.amount %></td>
+    <td><%=h procurement.status %></td>
+    <td><%=h procurement.report_date %></td>
+    <td><%= link_to 'Show', procurement %></td>
+    <td><%= link_to 'Edit', edit_procurement_path(procurement) %></td>
+    <td><%= link_to 'Destroy', procurement, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_procurement_path %>

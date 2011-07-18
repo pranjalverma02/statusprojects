@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @procurement.name %>
+</p>
+
+<p>
+  <b>Item description:</b>
+  <%=h @procurement.item_description %>
+</p>
+
+<p>
+  <b>Pr no:</b>
+  <%=h @procurement.pr_no %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @procurement.amount %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @procurement.status %>
+</p>
+
+<p>
+  <b>Report date:</b>
+  <%=h @procurement.report_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_procurement_path(@procurement) %> |
+<%= link_to 'Back', procurements_path %>

@@ -1,0 +1,2 @@
+module StatusprojectsHelper
+end

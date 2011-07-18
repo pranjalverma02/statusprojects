@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  work_firm: MyString
+  nos: MyString
+  report_date: MyString
+
+two:
+  name: MyString
+  work_firm: MyString
+  nos: MyString
+  report_date: MyString

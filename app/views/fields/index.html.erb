@@ -1,0 +1,31 @@
+<h1>Fields Data</h1>
+<p>Please Enter Name from "VHF, landlines, EPABXs, Data Connectivity(SAP KU-BAND), MF-TDMA/C-BAND, SCADA System(no. of loops)"</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Existing nos</th>
+    <th>Change in nos</th>
+    <th>Availability percentage</th>
+    <th>Downtime hrs</th>
+    <th>Report date</th>
+  </tr>
+
+<% for field in @fields %>
+  <tr>
+    <td><%=h field.name %></td>
+    <td><%=h field.existing_nos %></td>
+    <td><%=h field.change_in_nos %></td>
+    <td><%=h field.availability_percentage %></td>
+    <td><%=h field.downtime_hrs %></td>
+    <td><%=h field.report_date %></td>
+    <td><%= link_to 'Show', field %></td>
+    <td><%= link_to 'Edit', edit_field_path(field) %></td>
+    <td><%= link_to 'Destroy', field, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_field_path %>

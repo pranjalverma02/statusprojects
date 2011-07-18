@@ -1,0 +1,31 @@
+<h1>IT Infrastructure Service Management-II</h1>
+<p>Please Enter Name from "LAN Infrastructure(xclud PC), Tech Automation/New Innovation, Summer Trainee, Audio/Video support to Conf. Hall"</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Existing nos</th>
+    <th>Change in nos</th>
+    <th>Availability percentage</th>
+    <th>Downtime hrs</th>
+    <th>Report date</th>
+  </tr>
+
+<% for itismgmtfinal in @itismgmtfinals %>
+  <tr>
+    <td><%=h itismgmtfinal.name %></td>
+    <td><%=h itismgmtfinal.existing_nos %></td>
+    <td><%=h itismgmtfinal.change_in_nos %></td>
+    <td><%=h itismgmtfinal.availability_percentage %></td>
+    <td><%=h itismgmtfinal.downtime_hrs %></td>
+    <td><%=h itismgmtfinal.report_date %></td>
+    <td><%= link_to 'Show', itismgmtfinal %></td>
+    <td><%= link_to 'Edit', edit_itismgmtfinal_path(itismgmtfinal) %></td>
+    <td><%= link_to 'Destroy', itismgmtfinal, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_itismgmtfinal_path %>

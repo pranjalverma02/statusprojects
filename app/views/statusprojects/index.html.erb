@@ -1,0 +1,31 @@
+<h1>Project Status </h1>
+<p>Please Enter name from "BWA project, CCTV of Avani Bhavan, Upgradation of Exchange, NOC"</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Cost</th>
+    <th>Award date</th>
+    <th>Schd date of compl</th>
+    <th>Progress</th>
+    <th>Report date</th>
+  </tr>
+
+<% for statusproject in @statusprojects %>
+  <tr>
+    <td><%=h statusproject.name %></td>
+    <td><%=h statusproject.cost %></td>
+    <td><%=h statusproject.award_date %></td>
+    <td><%=h statusproject.schd_date_of_compl %></td>
+    <td><%=h statusproject.progress %></td>
+    <td><%=h statusproject.report_date %></td>
+    <td><%= link_to 'Show', statusproject %></td>
+    <td><%= link_to 'Edit', edit_statusproject_path(statusproject) %></td>
+    <td><%= link_to 'Destroy', statusproject, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_statusproject_path %>

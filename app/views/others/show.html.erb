@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @other.name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @other.status %>
+</p>
+
+<p>
+  <b>Report date:</b>
+  <%=h @other.report_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_other_path(@other) %> |
+<%= link_to 'Back', others_path %>

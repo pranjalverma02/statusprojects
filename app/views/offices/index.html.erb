@@ -1,0 +1,32 @@
+<h1>Office-I(Major Communication System Availability)</h1>
+<p>Please Enter Name as "Mobiles or Landlines"</p>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Existing nos</th>
+    <th>Nos deleted</th>
+    <th>Nos added</th>
+    <th>Total</th>
+    <th>Report date</th>
+  </tr>
+
+<% for office in @offices %>
+  <tr>
+    <td><%=h office.name %></td>
+    <td><%=h office.existing_nos %></td>
+    <td><%=h office.nos_deleted %></td>
+    <td><%=h office.nos_added %></td>
+    <td><%=h office.total %></td>
+    <td><%=h office.report_date %></td>
+    <td><%= link_to 'Show', office %></td>
+    <td><%= link_to 'Edit', edit_office_path(office) %></td>
+    <td><%= link_to 'Destroy', office, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_office_path %>

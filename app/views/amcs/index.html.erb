@@ -1,0 +1,29 @@
+<h1>AMCs</h1>
+<p>Please Enter name as "AMC contracts awarded"</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Work firm</th>
+    <th>Cost</th>
+    <th>Period</th>
+    <th>Status</th>
+  </tr>
+
+<% for amc in @amcs %>
+  <tr>
+    <td><%=h amc.name %></td>
+    <td><%=h amc.work_firm %></td>
+    <td><%=h amc.cost %></td>
+    <td><%=h amc.period %></td>
+    <td><%=h amc.status %></td>
+    <td><%= link_to 'Show', amc %></td>
+    <td><%= link_to 'Edit', edit_amc_path(amc) %></td>
+    <td><%= link_to 'Destroy', amc, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_amc_path %>

@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @statusproject.name %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%=h @statusproject.cost %>
+</p>
+
+<p>
+  <b>Award date:</b>
+  <%=h @statusproject.award_date %>
+</p>
+
+<p>
+  <b>Schd date of compl:</b>
+  <%=h @statusproject.schd_date_of_compl %>
+</p>
+
+<p>
+  <b>Progress:</b>
+  <%=h @statusproject.progress %>
+</p>
+
+<p>
+  <b>Report date:</b>
+  <%=h @statusproject.report_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_statusproject_path(@statusproject) %> |
+<%= link_to 'Back', statusprojects_path %>

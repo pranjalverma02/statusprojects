@@ -1,0 +1,28 @@
+<h1>New Entry in Trainings</h1>
+<p>Please Enter Name from "Training to Employees, Manpower Trained"</p>
+
+<% form_for(@training) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :work_firm %><br />
+    <%= f.text_field :work_firm %>
+  </p>
+  <p>
+    <%= f.label :nos %><br />
+    <%= f.text_field :nos %>
+  </p>
+  <p>
+    <%= f.label :report_date %><br />
+    <%= f.text_field :report_date %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', trainings_path %>

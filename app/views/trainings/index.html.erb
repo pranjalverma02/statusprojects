@@ -1,0 +1,27 @@
+<h1>Trainings</h1>
+<p>Please Enter Name from "Training to Employees, Manpower Trained"</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Work firm</th>
+    <th>Nos</th>
+    <th>Report date</th>
+  </tr>
+
+<% for training in @trainings %>
+  <tr>
+    <td><%=h training.name %></td>
+    <td><%=h training.work_firm %></td>
+    <td><%=h training.nos %></td>
+    <td><%=h training.report_date %></td>
+    <td><%= link_to 'Show', training %></td>
+    <td><%= link_to 'Edit', edit_training_path(training) %></td>
+    <td><%= link_to 'Destroy', training, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_training_path %>

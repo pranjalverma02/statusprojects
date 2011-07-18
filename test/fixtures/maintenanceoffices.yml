@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  existing_nos: MyString
+  change_in_nos: MyString
+  availablity_percentage: MyString
+  downtime_hrs: MyString
+  report_date: MyString
+
+two:
+  name: MyString
+  existing_nos: MyString
+  change_in_nos: MyString
+  availablity_percentage: MyString
+  downtime_hrs: MyString
+  report_date: MyString

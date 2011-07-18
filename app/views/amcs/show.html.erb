@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @amc.name %>
+</p>
+
+<p>
+  <b>Work firm:</b>
+  <%=h @amc.work_firm %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%=h @amc.cost %>
+</p>
+
+<p>
+  <b>Period:</b>
+  <%=h @amc.period %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @amc.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_amc_path(@amc) %> |
+<%= link_to 'Back', amcs_path %>

@@ -1,0 +1,37 @@
+<h1>Editing Entry in Budget Utilization/Procurement</h1>
+<p>Please Enter Name from "Capital/Capex, Stores & Spares, Revenue/opex/Contracts"</p>
+
+<% form_for(@procurement) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :item_description %><br />
+    <%= f.text_field :item_description %>
+  </p>
+  <p>
+    <%= f.label :pr_no %><br />
+    <%= f.text_field :pr_no %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_area :status %>
+  </p>
+  <p>
+    <%= f.label :report_date %><br />
+    <%= f.text_field :report_date %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @procurement %> |
+<%= link_to 'Back', procurements_path %>

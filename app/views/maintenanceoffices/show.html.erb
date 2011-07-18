@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @maintenanceoffice.name %>
+</p>
+
+<p>
+  <b>Existing nos:</b>
+  <%=h @maintenanceoffice.existing_nos %>
+</p>
+
+<p>
+  <b>Change in nos:</b>
+  <%=h @maintenanceoffice.change_in_nos %>
+</p>
+
+<p>
+  <b>Availablity percentage:</b>
+  <%=h @maintenanceoffice.availablity_percentage %>
+</p>
+
+<p>
+  <b>Downtime hrs:</b>
+  <%=h @maintenanceoffice.downtime_hrs %>
+</p>
+
+<p>
+  <b>Report date:</b>
+  <%=h @maintenanceoffice.report_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_maintenanceoffice_path(@maintenanceoffice) %> |
+<%= link_to 'Back', maintenanceoffices_path %>

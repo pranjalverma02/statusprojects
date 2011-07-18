@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  existing_nos: MyString
+  nos_deleted: MyString
+  nos_added: MyString
+  total: MyString
+  report_date: MyString
+
+two:
+  name: MyString
+  existing_nos: MyString
+  nos_deleted: MyString
+  nos_added: MyString
+  total: MyString
+  report_date: MyString

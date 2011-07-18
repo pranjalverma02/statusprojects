@@ -1,0 +1,37 @@
+<h1>Editing Entry in office-II-Maintenance(Major Communication System Availability)</h1>
+<p>Please Enter Name as "Exchange-Maintenance or ICNET-Voice"</p>
+
+<% form_for(@maintenanceoffice) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :existing_nos %><br />
+    <%= f.text_field :existing_nos %>
+  </p>
+  <p>
+    <%= f.label :change_in_nos %><br />
+    <%= f.text_field :change_in_nos %>
+  </p>
+  <p>
+    <%= f.label :availablity_percentage %><br />
+    <%= f.text_field :availablity_percentage %>
+  </p>
+  <p>
+    <%= f.label :downtime_hrs %><br />
+    <%= f.text_field :downtime_hrs %>
+  </p>
+  <p>
+    <%= f.label :report_date %><br />
+    <%= f.text_field :report_date %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @maintenanceoffice %> |
+<%= link_to 'Back', maintenanceoffices_path %>

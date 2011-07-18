@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @field.name %>
+</p>
+
+<p>
+  <b>Existing nos:</b>
+  <%=h @field.existing_nos %>
+</p>
+
+<p>
+  <b>Change in nos:</b>
+  <%=h @field.change_in_nos %>
+</p>
+
+<p>
+  <b>Availability percentage:</b>
+  <%=h @field.availability_percentage %>
+</p>
+
+<p>
+  <b>Downtime hrs:</b>
+  <%=h @field.downtime_hrs %>
+</p>
+
+<p>
+  <b>Report date:</b>
+  <%=h @field.report_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_field_path(@field) %> |
+<%= link_to 'Back', fields_path %>

@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @training.name %>
+</p>
+
+<p>
+  <b>Work firm:</b>
+  <%=h @training.work_firm %>
+</p>
+
+<p>
+  <b>Nos:</b>
+  <%=h @training.nos %>
+</p>
+
+<p>
+  <b>Report date:</b>
+  <%=h @training.report_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_training_path(@training) %> |
+<%= link_to 'Back', trainings_path %>
